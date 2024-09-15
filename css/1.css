@@ -12,7 +12,12 @@ body
 {
     background-color: white;
     margin: 0;
+    overflow-y: scroll;
     overflow-x: hidden;
+}
+::-webkit-scrollbar 
+{
+    width: 0px;
 }
 a
 {
@@ -32,7 +37,7 @@ a
     flex-shrink: 1;
     flex-basis: auto;
 }
-#preto
+.black_
 {
     position: absolute;
     z-index: 4;
@@ -41,13 +46,23 @@ a
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     min-height: 100vh;
-    max-height: 100%;
+    max-height: 100vh;
     flex-direction: column;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
+    animation: wha 0.3s forwards;
+}
+@keyframes wha
+{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
 }
 .something
 {
@@ -60,14 +75,17 @@ a
 @keyframes buu
 {
     0%{
-      opacity: 0;
+        opacity: 0;
     }
-    50%{
-      opacity: 0.3;
+    20%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0.3;
     }
     100%{
-      display: none;
-      opacity: 0;
+        display: none;
+        opacity: 0;
     }
 }
 .logo
@@ -116,16 +134,16 @@ a
 {
     position: relative;
     float: left;
-    margin-right: 25px;
+    margin-right: 20px;
     color: rgb(255, 255, 255);
     font-family: 'font1';
-    font-size: 20px;
+    font-size: 1.2rem;
     text-align: center;
     align-content: center;
     background-color: #06000f;
-    padding: 7px;
+    padding: 5px;
     border: 1px solid #06000f;
-    width: 80px;
+    width: 70px;
     cursor: url(img/cursor.png), auto;
 }
 .about:before 
@@ -143,16 +161,16 @@ a
 {
     position: relative;
     float: left;
-    margin-right: 25px;
+    margin-right: 20px;
     color: rgb(255, 255, 255);
     font-family: 'font1';
-    font-size: 20px;
+    font-size: 1.2rem;
     text-align: center;
     align-content: center;
     background-color: #06000f;
-    padding: 7px;
+    padding: 5px;
     border: 1px solid #06000f;
-    width: 80px;
+    width: 70px;
     cursor: url(img/cursor.png), auto;
 }
 .gemaplys:before 
@@ -170,16 +188,16 @@ a
 {
     position: relative;
     float: left;
-    margin-right: 25px;
+    margin-right: 20px;
     color: rgb(255, 255, 255);
     font-family: 'font1';
-    font-size: 20px;
+    font-size: 1.2rem;
     text-align: center;
     align-content: center;
     background-color: #06000f;
-    padding: 7px;
+    padding: 5px;
     border: 1px solid #06000f;
-    width: 80px;
+    width: 70px;
     cursor: url(img/cursor.png), auto;
 }
 .story:before 
@@ -199,13 +217,13 @@ a
     float: left;
     color: rgb(255, 255, 255);
     font-family: 'font1';
-    font-size: 20px;
+    font-size: 1.2rem;
     text-align: center;
     align-content: center;
     background-color: #06000f;
-    padding: 7px;
+    padding: 5px;
     border: 1px solid #06000f;
-    width: 80px;
+    width: 70px;
     cursor: url(img/cursor.png), auto;
 }
 .team:before 
@@ -227,7 +245,7 @@ a
     justify-self: center;
     justify-content: flex-start;
     align-items: center;
-    width: 450px;
+    width: 500px;
     height: 320px;
     background-color: #ffffff00;
     flex-grow: 1;
@@ -235,27 +253,28 @@ a
     flex-basis: auto;
     flex-direction: column;
     position: relative;
+    animation: uwu 1s forwards;
 }
-.door
+@keyframes uwu
+{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.conteiner
 {
     display: flex;
-    position: relative;
-    height: 42vh;
-    max-height: 300px;
-    min-height: 220px;
-    cursor: url(img/cursor.png), auto;
-}
-#trailer
-{
-    display: none;
 }
 .console
 {
     width: auto;
-    height: 42vh;
+    height: 40vh;
     max-height: 300px;
     min-height: 220px;
-    /*max-width: 500px;*/
+    max-width: 500px;
     aspect-ratio: 16 / 9;
 }
 .avhere
@@ -289,10 +308,10 @@ a
     text-align: center;
     align-content: center;
     background-color: #06000f;
-    padding: 0px;
-    padding-top: 4px;
+    padding: 5px;
+    padding-top: 8px;
     border: 1px solid #06000f;
-    width: 130px;
+    width: 120px;
     cursor: url(img/cursor.png), auto;
 }
 .steam:before 
@@ -308,7 +327,7 @@ a
 }
 .steam_logo
 {
-    height: 34px;
+    height: 28px;
 }
 .ns
 {
@@ -318,10 +337,10 @@ a
     text-align: center;
     align-content: center;
     background-color: #06000f;
-    padding: 0px;
-    padding-top: 3px;
+    padding: 5px;
+    padding-top: 8px;
     border: 1px solid #06000f;
-    width: 130px;
+    width: 120px;
     cursor: url(img/cursor.png), auto;
 }
 .ns:before 
@@ -337,7 +356,7 @@ a
 }
 .ns_logo
 {
-    height: 35px;
+    height: 28px;
 }
 .ps
 {
@@ -347,10 +366,10 @@ a
     text-align: center;
     align-content: center;
     background-color: #06000f;
-    padding: 5px;
-    padding-top: 8px;
+    padding: 6px;
+    padding-top: 9px;
     border: 1px solid #06000f;
-    width: 130px;
+    width: 120px;
     cursor: url(img/cursor.png), auto;
 }
 .ps:before 
@@ -366,7 +385,7 @@ a
 }
 .ps_logo
 {
-    height: 25px;
+    height: 24px;
 }
 .xbox
 {
@@ -378,7 +397,7 @@ a
     padding: 5px;
     padding-top: 8px;
     border: 1px solid #06000f;
-    width: 130px;
+    width: 120px;
     cursor: url(img/cursor.png), auto;
 }
 .xbox:before 
@@ -394,7 +413,7 @@ a
 }
 .xbox_logo
 {
-    height: 25px;
+    height: 26px;
 }
 .k7
 {
@@ -538,35 +557,45 @@ a
 }
 @media screen and (max-width: 64rem)
 {
-    .door
+    @media screen and (max-height: 40rem)
     {
-        height: 20vh !important;
-        min-height: 170px !important;
+        .door
+        {
+            height: 20vh !important;
+            min-height: 170px !important;
+        }
+        .console
+        {
+            height: 20vh !important;
+            min-height: 170px !important;
+        }
     }
-    .console
+    @media screen and (max-height: 44rem)
     {
-        height: 20vh !important;
-        min-height: 170px !important;
+        .bct
+        {
+            max-height: 250px;
+        }
     }
     .steam
     {
-        padding: 0px;
-        padding-top: 3px;
+        padding: 3px;
+        padding-top: 6px;
         width: 110px;
     }
     .steam_logo
     {
-        height: 29px;
+        height: 24px;
     }
     .ns
     {
-        padding: 0px;
-        padding-top: 3px;
+        padding: 4px;
+        padding-top: 7px;
         width: 110px;
     }
     .ns_logo
     {
-        height: 29px;
+        height: 22px;
     }
     .ps
     {
@@ -580,14 +609,13 @@ a
     }
     .xbox
     {
-        padding: 2px;
-        padding-top: 5px;
-        padding-bottom: 2px;
+        padding: 3px;
+        padding-top: 6px;
         width: 110px;
     }
     .xbox_logo
     {
-        height: 25px;
+        height: 23px;
     }
     .k7
     {
@@ -622,4 +650,8 @@ a
     {
         position: inherit !important;
     }
+}
+@media screen and (max-height: 44.3rem)
+{
+    
 }
