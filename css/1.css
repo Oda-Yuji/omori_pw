@@ -26,7 +26,7 @@ a
 .conteiner-geral
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100vw;
     height: 100%;
@@ -311,7 +311,7 @@ a
     padding: 5px;
     padding-top: 8px;
     border: 1px solid #06000f;
-    width: 120px;
+    width: 101px;
     cursor: url(img/cursor.png), auto;
 }
 .steam:before 
@@ -327,7 +327,7 @@ a
 }
 .steam_logo
 {
-    height: 28px;
+    height: 24px;
 }
 .ns
 {
@@ -340,7 +340,7 @@ a
     padding: 5px;
     padding-top: 8px;
     border: 1px solid #06000f;
-    width: 120px;
+    width: 101px;
     cursor: url(img/cursor.png), auto;
 }
 .ns:before 
@@ -356,7 +356,7 @@ a
 }
 .ns_logo
 {
-    height: 28px;
+    height: 24px;
 }
 .ps
 {
@@ -369,7 +369,7 @@ a
     padding: 6px;
     padding-top: 9px;
     border: 1px solid #06000f;
-    width: 120px;
+    width: 101px;
     cursor: url(img/cursor.png), auto;
 }
 .ps:before 
@@ -385,7 +385,7 @@ a
 }
 .ps_logo
 {
-    height: 24px;
+    height: 20px;
 }
 .xbox
 {
@@ -397,7 +397,7 @@ a
     padding: 5px;
     padding-top: 8px;
     border: 1px solid #06000f;
-    width: 120px;
+    width: 101px;
     cursor: url(img/cursor.png), auto;
 }
 .xbox:before 
@@ -413,7 +413,7 @@ a
 }
 .xbox_logo
 {
-    height: 26px;
+    height: 22px;
 }
 .k7
 {
@@ -517,11 +517,11 @@ a
 .crd
 {
     font-family: 'font1';
-    font-size: 15px;
+    font-size: 1rem;
 }
 .c
 {
-    font-size: 13px;
+    font-size: 14px;
     color: black;
     cursor: url(img/cursor.png), auto;
 }
@@ -569,53 +569,10 @@ a
             height: 20vh !important;
             min-height: 170px !important;
         }
-    }
-    @media screen and (max-height: 44rem)
-    {
         .bct
         {
             max-height: 250px;
         }
-    }
-    .steam
-    {
-        padding: 3px;
-        padding-top: 6px;
-        width: 110px;
-    }
-    .steam_logo
-    {
-        height: 24px;
-    }
-    .ns
-    {
-        padding: 4px;
-        padding-top: 7px;
-        width: 110px;
-    }
-    .ns_logo
-    {
-        height: 22px;
-    }
-    .ps
-    {
-        padding: 3px;
-        padding-top: 8px;
-        width: 110px;
-    }
-    .ps_logo
-    {
-        height: 21px;
-    }
-    .xbox
-    {
-        padding: 3px;
-        padding-top: 6px;
-        width: 110px;
-    }
-    .xbox_logo
-    {
-        height: 23px;
     }
     .k7
     {
@@ -650,8 +607,4 @@ a
     {
         position: inherit !important;
     }
-}
-@media screen and (max-height: 44.3rem)
-{
-    
 }
