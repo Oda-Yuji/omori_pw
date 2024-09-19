@@ -7,6 +7,8 @@ function show()
         .style.minHeight = "100vh";
     document.getElementById('cg')
         .style.maxHeight = "100vh";
+    document.getElementById('cg')
+        .style.justifyContent = "center";
     document.getElementById('preto')
         .style.display = "flex";
     document.getElementById('algo')
@@ -24,6 +26,8 @@ function unshow()
         .style.minHeight = "100vh";
     document.getElementById('cg')
         .style.maxHeight = "100%";
+    document.getElementById('cg')
+        .style.justifyContent = "space-between";
     document.getElementById('preto')
         .style.display = "none";
     document.getElementById('algo')
