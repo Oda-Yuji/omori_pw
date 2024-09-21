@@ -100,22 +100,50 @@ a
     flex-grow: 0;
     flex-shrink: 0;
     margin-top: 0;
+    animation: lamp2 6s forwards;
+}
+@keyframes lamp2
+{
+    0% {
+        transform: translateY(200px);
+    }
+    50% {
+        transform: translateY(200px);
+    }
+    100% {
+        transform: translateY(opx);
+    }
 }
 .logo1
 {
     width: 130px;
     margin-top: 10px;
+    animation: lamp1 3s linear forwards;
 }
 .lamp
 {
     width: 75px;
-    margin-top: -10px;
+    margin-top: -315px;
     cursor: url(img/cursor.png), auto;
+    animation: lamp1 1.5s linear forwards;
+}
+@keyframes lamp1
+{
+    0% {
+         opacity: 0;
+    }
+    50% {
+         opacity: 0;
+    }
+    100% {
+         opacity: 1;
+    }
 }
 .logo2
 {
     width: 100px;
     margin-top: 10px;
+    animation: lamp1 3s linear forwards;
 }
 .bn
 {
@@ -129,6 +157,19 @@ a
     flex-grow: 0;
     flex-shrink: 0;
     margin-top: 0;
+    animation: resto 7s linear forwards;
+}
+@keyframes resto
+{
+    0% {
+         opacity: 0;
+    }
+    80% {
+         opacity: 0;
+    }
+    100% {
+         opacity: 1;
+    }
 }
 .about
 {
@@ -253,16 +294,7 @@ a
     flex-basis: auto;
     flex-direction: column;
     position: relative;
-    animation: uwu 1s forwards;
-}
-@keyframes uwu
-{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+    animation: resto 7s linear forwards;
 }
 .conteiner
 {
@@ -282,7 +314,7 @@ a
     display: flex;
     position: relative;
     justify-content: center;
-    margin-bottom: -1rem;
+    margin-bottom: -15px;
 }
 .here
 {
@@ -295,7 +327,7 @@ a
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 500px;
     height: 50px;
     margin-top: 0;
     margin-bottom: 0;
@@ -311,7 +343,7 @@ a
     padding: 5px;
     padding-top: 8px;
     border: 1px solid #06000f;
-    width: 101px;
+    width: 105px;
     cursor: url(img/cursor.png), auto;
 }
 .steam:before 
@@ -340,7 +372,7 @@ a
     padding: 5px;
     padding-top: 8px;
     border: 1px solid #06000f;
-    width: 101px;
+    width: 105px;
     cursor: url(img/cursor.png), auto;
 }
 .ns:before 
@@ -369,7 +401,7 @@ a
     padding: 6px;
     padding-top: 9px;
     border: 1px solid #06000f;
-    width: 101px;
+    width: 105px;
     cursor: url(img/cursor.png), auto;
 }
 .ps:before 
@@ -385,7 +417,7 @@ a
 }
 .ps_logo
 {
-    height: 20px;
+    height: 22px;
 }
 .xbox
 {
@@ -397,7 +429,7 @@ a
     padding: 5px;
     padding-top: 8px;
     border: 1px solid #06000f;
-    width: 101px;
+    width: 105px;
     cursor: url(img/cursor.png), auto;
 }
 .xbox:before 
@@ -413,7 +445,7 @@ a
 }
 .xbox_logo
 {
-    height: 22px;
+    height: 24px;
 }
 .k7
 {
@@ -429,6 +461,7 @@ a
     flex-shrink: 0;
     margin-top: 25px;
     margin-bottom: 20px;
+    animation: resto 7s linear forwards;
 }
 .ws
 {
@@ -606,5 +639,84 @@ a
     .final
     {
         position: inherit !important;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .about,
+    .gemaplys,
+    .story,
+    .team
+    {
+        width: 55px;
+        font-size: 0.9rem;
+    }
+    .about,
+    .gemaplys,
+    .story
+    {
+        margin-right: 10px !important;
+    }
+    .door
+    {
+        max-width: 360px !important;
+    }
+    .console
+    {
+        max-width: 360px !important;
+    }
+    .here
+    {
+        font-size: 1rem;
+    }
+    .steam,
+    .ns,
+    .ps,
+    .xbox
+    {
+        width: 71px;
+    }
+    .steam,
+    .ns,
+    .ps
+    {
+        margin-right: 8px;
+    }
+    .steam_logo,
+    .ns_logo,
+    .xbox_logo
+    {
+        height: 17px;
+    }
+    .ps_logo
+    {
+        height: 15px;
+    }
+    .k7
+    {
+        width: 360px !important;
+    }
+    .portaws
+    {
+        margin-left: -287px !important;
+    }
+    .final
+    {
+        width: 360px;
+    }
+    .crd
+    {
+        font-size: 0.9rem;
+    }
+    .c
+    {
+        font-size: 11px;
+    }
+    .face,
+    .twt,
+    .insta,
+    .ost
+    {
+        width: 28px;
     }
 }
