@@ -35,7 +35,6 @@ function unshow()
     document.getElementById('logo')
         .style.display = "flex";
 }
-
 (function(window)
 {
     function video()
